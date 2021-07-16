@@ -6,7 +6,7 @@
 
 ### 1: Scope
 
-Write a JavaScript code that has a global variable defined in first line in global scope. Then  =have a local variable defined inside the a function.
+Write a JavaScript code that has a global variable defined in first line in global scope. Then =have a local variable defined inside the a function.
 
 1. Under the `src` directory, create a file named `scope.js`
 1. Declare a global variable
@@ -21,8 +21,6 @@ Write a JavaScript code that has a global variable defined in first line in glob
     //local
   };
 ```
-
-
 
 ### 2: Hoisting
 
@@ -44,8 +42,6 @@ demo(); // print values
 };
 ```
 
-
-
 ### 3: Closure
 
 Write a JavaScript closure that will execute the inner function
@@ -57,22 +53,20 @@ Write a JavaScript closure that will execute the inner function
 
 **Example:**
 
-
 ```js
-           // closure
-         function outer()
-      	 {
-        		//variable to be created
-      		 function inner(){
-      			 // variable to be returned
-    		 }
-    		 return inner;
-    		 }
-  	       //store inner function in variable
+// closure
+function outer() {
+  //variable to be created
+  function inner() {
+    // variable to be returned
+  }
+  return inner;
+}
+//store inner function in variable
 
-    	    // make call to inner function to display variable
-
+// make call to inner function to display variable
 ```
+
 ### 4: IIFE
 
 Write a JavaScript Immediately invoked function that says Hello World!!
@@ -80,32 +74,25 @@ Write a JavaScript Immediately invoked function that says Hello World!!
 1. Under the `src` directory, create a file named `iife.js`
 1. Define the hello world function
 
-
-
 ### 5: Higher order function
 
 Write a JavaScript function that would take another function as input
 
 1. Under the `src` directory, create a file named `higherOrder.js`
 1. Define two function named `function 1` and `function 2`
-1. Pass `function 1`as input parameter to  `function 2`  and return  `function 1`
-
-
+1. Pass `function 1`as input parameter to `function 2` and return `function 1`
 
 **Example:**
 
 ```js
+function function1(a, b) {
+  return a + b;
+}
 
-   function function1(a, b) {
-   return a + b;
-   }
-
-   function function2(a, b, function1) {
-    // return function1
-   }
-
+function function2(a, b, function1) {
+  // return function1
+}
 ```
-
 
 ## Submission Guidelines
 
